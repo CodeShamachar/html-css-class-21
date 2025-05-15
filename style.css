@@ -1,0 +1,128 @@
+:root {
+  --fbColor: #4267b2;
+  --twtrColor: #1da1f2;
+  --ytColor: #ff0000;
+  --instaColor: #c33089;
+  --gthbColor: #2b3137;
+  --whtapColor: #3ec34e;
+  --linkdnColor: #0072b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f242d;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  margin: 0 20px;
+  z-index: 1;
+  text-align: center;
+  line-height: 70px;
+  transition: 0.3s;
+  box-shadow: 0 4px 3px 1px #181818;
+  border-radius: 5px;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  background: #cecece;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+nav a i {
+  font-size: 2rem;
+  color: #1f242d;
+  transition: 0.3s;
+}
+
+
+nav a:hover:before {
+  background: #171e1e;
+  transition: 0.3s;
+}
+
+a:hover:nth-child(1) i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  color: var(--fbColor);
+}
+
+a:hover:nth-child(1) {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--fbColor);
+  border-radius: 5px;
+}
+
+a:hover:nth-child(2) i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  color: var(--twtrColor);
+}
+
+a:hover:nth-child(2) {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--twtrColor);
+  border-radius: 5px;
+}
+
+a:hover:nth-child(3) i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  color: var(--instaColor);
+}
+
+a:hover:nth-child(3) {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--instaColor);
+  border-radius: 5px;
+}
+
+a:hover:nth-child(4) i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  color: var(--linkdnColor);
+}
+
+a:hover:nth-child(4) {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--linkdnColor);
+  border-radius: 5px;
+}
+
+a:hover:nth-child(5) i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  color: var(--ytColor);
+}
+
+a:hover:nth-child(5) {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--ytColor);
+  border-radius: 5px;
+}
